@@ -25,11 +25,6 @@
 
 ;;; Code: https://github.com/jasonblewis/melpa
 
-
-
-
-
-
 ;;;###autoload
 (defun melpa-repository ()
   (require 'package) ;; You might already have this line

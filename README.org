@@ -1,0 +1,19 @@
+#+TITLE:        README for melpa-repository
+#+AUTHOR:       Jason Lewis
+#+EMAIL:        jason@dickson.st
+#+DATE:         2015-02-19
+#+UPDATE:       19:58:48
+#+STARTUP:      content
+
+* What is this?
+
+The main purpose of this file is to enable the melpa repository.
+
+* Install
+This package is on marmalade. Install it from marmalade
+* TODO Source
+https://github.com/jasonblewis/melpa-repository
+
+#+BEGIN_SRC lisp
+package-install melpa-repository
+#+END_SRC
