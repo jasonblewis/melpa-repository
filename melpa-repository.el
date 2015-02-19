@@ -25,8 +25,7 @@
 
 ;;; Code: https://github.com/jasonblewis/melpa
 
-;;;###autoload
-(defun melpa-repository ()
+(defun melpa-repository/private-function ()
   (require 'package) ;; You might already have this line
   (add-to-list 'package-archives
                '("melpa" . "http://melpa.org/packages/") t)
@@ -35,6 +34,13 @@
     (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
   (package-initialize) ;; You might already have this line
   )
+
+
+
+;;;###autoload
+(defun melpa-repository ()
+  (interactive)
+  (melpa-repository/private-function))
 
 (provide 'melpa-repository)
 
