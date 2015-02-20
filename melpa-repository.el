@@ -3,7 +3,7 @@
 ;; Copyright (C) 2015  Jason Lewis
 
 ;; Author: Jason Lewis <jason@dickson.st>
-;; Keywords: lisp
+;; Keywords: melpa, elpa
 ;; Version: 0.0.5
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -42,6 +42,8 @@
   (interactive)
   (melpa-repository/private-function))
 
-(provide 'melpa-repository)
+;;;###autoload
+(melpa-repository/private-function) ;; run it after load?
 
-;;; melpa-repository.el ends here
+(provide 'melpa-repository)
+;;; melpa-repository.el ends herep
